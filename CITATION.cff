@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use the Neural-Wave 2036 archive in your research, please cite this repository and the accompanying paper."
+title: "Neural-Wave Quick Escape Manual 2036: A Field Guide to Adversarial Living in the Era of \"Empathic\" AIoT"
+abstract: >-
+  A design-fiction archive set in 2036, where the home is governed by Neural-Wave, a
+  "camera-free" mmWave sensing platform that infers well-being from involuntary
+  micro-motions. The primary contribution is a diegetic artifact — The Neural-Wave
+  Quick Escape Manual — detailing adversarial tactics (Comply, Degrade, Refuse) that
+  exploit signal processing vulnerabilities to reclaim domestic privacy. The work argues
+  that in the era of "empathic" AIoT, privacy demands "adversarial literacy".
+keywords:
+  - Design fiction
+  - mmWave radar
+  - smart home
+  - algorithmic governance
+  - adversarial interaction
+  - privacy
+  - elder care
+  - AIoT
+license: CC-BY-4.0
+authors:
+  - family-names: Gu
+    given-names: Boyuan
+    email: guboyuan79@gmail.com
+    affiliation: "University of Electronic Science and Technology of China (UESTC)"
+    orcid: "0009-0001-8273-7502"
+  - family-names: Cheng
+    given-names: Shuaiqi
+    affiliation: "University of Electronic Science and Technology of China (UESTC)"
+  - family-names: Yu
+    given-names: Minghao
+    affiliation: "University of Electronic Science and Technology of China (UESTC)"
+version: 1.0.0
+date-released: 2026-08-12
+preferred-citation:
+  type: article
+  title: "The Neural-Wave Quick Escape Manual 2036: A Field Guide to Adversarial Living in the Era of \"Empathic\" AIoT"
+  authors:
+    - family-names: Gu
+      given-names: Boyuan
+    - family-names: Cheng
+      given-names: Shuaiqi
+    - family-names: Yu
+      given-names: Minghao
+  year: 2026
+  journal: "ACM Interactions"
+  note: "Accepted for publication. This is the author preprint version."

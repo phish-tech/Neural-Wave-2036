@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / OS caches
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local build artifacts
+node_modules/
+dist/
