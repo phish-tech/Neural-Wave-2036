@@ -68,14 +68,19 @@ function createDemo(root) {
 }
 
 function animate(demo, draw, advance) {
+  let reducedAcc = 0;
   function frame(now) {
     const dt = Math.min((now - demo._last) / 1000, 0.05);
-    if (REDUCED_MOTION && dt < 0.25) {
-      requestAnimationFrame(frame);
-      return;
-    }
     demo._last = now;
     if (demo._running) {
+      if (REDUCED_MOTION) {
+        reducedAcc += dt;
+        if (reducedAcc < 0.25) {
+          requestAnimationFrame(frame);
+          return;
+        }
+        reducedAcc = 0;
+      }
       if (advance) advance(dt, now);
       const { ctx, width, height } = demo;
       ctx.clearRect(0, 0, width, height);
@@ -131,7 +136,14 @@ function initComply() {
   }
 
   btn.addEventListener("click", () => {
-    if (state === "agitated") {
+    if (state === "agitated" || state === "stable") {
+      if (state === "stable") {
+        progress = 0;
+        rate = 1.9; jit = 0.55; amp = 1.0;
+        setDoor(true);
+        resetBtn.disabled = true;
+        updateRing();
+      }
       state = "stabilizing";
       setStatus("STATUE PROTOCOL · converging with the model's prior…", "");
       btn.disabled = true;
@@ -204,6 +216,7 @@ function initDegrade() {
     phantomOn = !phantomOn;
     btn.textContent = "Phantom Oscillator: " + (phantomOn ? "ON" : "OFF");
     btn.className = "btn " + (phantomOn ? "primary" : "");
+    btn.setAttribute("aria-pressed", phantomOn ? "true" : "false");
   });
 
   animate(demo, (ctx, w, h) => {
@@ -262,6 +275,7 @@ function initRefuse() {
     shielded = !shielded;
     btn.textContent = "Faraday Shield: " + (shielded ? "ENGAGED" : "OFF");
     btn.className = "btn " + (shielded ? "primary" : "");
+    btn.setAttribute("aria-pressed", shielded ? "true" : "false");
   });
 
   animate(demo, (ctx, w, h) => {
