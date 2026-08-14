@@ -87,8 +87,8 @@ function initTimeline() {
       v += 0.03 * Math.sin(tt * 41);
       trace[i] = clamp(v, -2, 2);
     }
-    const locked = p >= 0.45 && p < 0.82;
-    const color = locked ? "#ffb45c" : "#5cffb0";
+    const alarmed = p >= 0.3 && p < 0.82;
+    const color = alarmed ? "#ffb45c" : "#5cffb0";
     drawLine(ctx, trace, color, maxAmp);
 
     ctx.strokeStyle = "rgba(255,255,255,0.35)";
@@ -98,9 +98,10 @@ function initTimeline() {
     ctx.stroke();
 
     hrEl.textContent = Math.round(hr) + " BPM";
-    hrEl.style.color = locked ? "#ffb45c" : "#5cffb0";
+    hrEl.style.color = alarmed ? "#ffb45c" : "#5cffb0";
     captionEl.textContent = beat.label;
     subEl.textContent = beat.sub;
+    const locked = p >= 0.45 && p < 0.82;
     doorEl.textContent = locked ? "LOCKED" : (p > 0.82 ? "UNLOCKED" : "ARMED");
     doorEl.className = "story-door " + (locked ? "on" : "off");
   }
