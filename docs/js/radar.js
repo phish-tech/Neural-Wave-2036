@@ -40,6 +40,7 @@ function makeRings() {
 function initRadar() {
   const host = document.createElement("div");
   host.id = "radar-bg";
+  host.setAttribute("aria-hidden", "true");
   host.style.cssText = "position:fixed;inset:0;z-index:0;pointer-events:none;";
   document.body.prepend(host);
 
