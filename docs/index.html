@@ -15,174 +15,260 @@
 </head>
 <body>
 
+<button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">中文</button>
+
 <header class="hero">
-  <p class="eyebrow">/// ARCHIVE ACCESS GRANTED</p>
+  <p class="eyebrow" data-i18n="hero.eyebrow">/// ARCHIVE ACCESS GRANTED</p>
   <h1>NEURAL-WAVE</h1>
-  <p class="sub">Quick Escape Manual 2036</p>
-  <p class="tagline">A design-fiction field guide to adversarial living<br>in the era of <em>&ldquo;Empathic&rdquo; AIoT</em>.</p>
+  <p class="sub" data-i18n="hero.sub">Quick Escape Manual 2036</p>
+  <p class="tagline" data-i18n="hero.tagline">A design-fiction field guide to adversarial living<br>in the era of <em>&ldquo;Empathic&rdquo; AIoT</em>.</p>
+  <p class="acm-line" data-i18n="hero.acm">ACM <b>Interactions</b> Feature &middot; November/December 2026 &middot; <span class="ok">Accepted</span></p>
+  <nav class="hero-cta">
+    <a class="btn primary" href="https://github.com/phish-tech/Neural-Wave-2036/raw/main/manual/Neural-Wave_Quick_Escape_Manual_2036.pdf" target="_blank" rel="noopener" data-i18n="hero.cta.manual">READ THE MANUAL</a>
+    <a class="btn" href="https://github.com/phish-tech/Neural-Wave-2036/raw/main/paper/neural_wave_quick_escape_manual_2036_preprint.pdf" target="_blank" rel="noopener" data-i18n="hero.cta.paper">RESEARCH PAPER</a>
+    <a class="btn" href="https://github.com/phish-tech/Neural-Wave-2036" target="_blank" rel="noopener" data-i18n="hero.cta.github">GITHUB ARCHIVE</a>
+  </nav>
   <nav class="hero-nav">
-    <a class="btn primary" href="#manual">Read the Manual</a>
-    <a class="btn" href="#premise">The Premise</a>
-    <a class="btn" href="#threats">Threats &amp; Protocols</a>
-    <a class="btn" href="#lab">Live Lab</a>
-    <a class="btn" href="#story">Arthur&rsquo;s Night</a>
-    <a class="btn" href="#world">Worldbuilding</a>
-    <a class="btn" href="#research">Research</a>
-    <a class="btn" href="#cite">Cite</a>
+    <a class="btn" href="#premise" data-i18n="nav.premise">The Premise</a>
+    <a class="btn" href="#manual" data-i18n="nav.manual">The Manual</a>
+    <a class="btn" href="#threats" data-i18n="nav.threats">Threats &amp; Protocols</a>
+    <a class="btn" href="#lab" data-i18n="nav.lab">Live Lab</a>
+    <a class="btn" href="#story" data-i18n="nav.story">Arthur&rsquo;s Night</a>
+    <a class="btn" href="#world" data-i18n="nav.world">Worldbuilding</a>
+    <a class="btn" href="#research" data-i18n="nav.research">Research</a>
+    <a class="btn" href="#cite" data-i18n="nav.cite">Cite</a>
   </nav>
 </header>
 
 <main>
 
   <section id="premise" class="block">
-    <h2>01 · The Premise</h2>
-    <p class="lede">By 2036, population aging is no longer a demographic curve; it is an operational mandate.</p>
-    <p>Under chronic shortages of care labor, &ldquo;care&rdquo; is recast as an auditable public obligation. The promise shifts from <em>Aging in Place</em> to <em>Aging in a Diagnostic Machine</em> — the home is reclassified as a sensing endpoint that must check in on schedule and generate defensible traces of well-being.</p>
-    <p>The mandate arrives as <strong>Neural-Wave</strong>, an &ldquo;empathic&rdquo; AI+IoT care platform procured at scale. Cameras failed — the lens makes privacy loss visible, triggering resistance. Neural-Wave instead relies on <em>spectral surveillance</em>: a camera-free millimeter-wave radar that captures involuntary micro-motions through walls, outputting spectrograms and risk scores rather than footage.</p>
-    <p class="callout">Yet &ldquo;camera-free&rdquo; never means governance-free. The conflict shifts from &ldquo;I am being watched&rdquo; to &ldquo;I am being inferred&rdquo; — and opt-out becomes &ldquo;This feature is unavailable for your safety.&rdquo;</p>
+    <h2 data-i18n="p01.title">01 · The Premise</h2>
+    <p class="lede" data-i18n="p01.lede">By 2036, population aging is no longer a demographic curve; it is an operational mandate.</p>
+    <p data-i18n="p01.p1">Under chronic shortages of care labor, &ldquo;care&rdquo; is recast as an auditable public obligation. The promise shifts from <em>Aging in Place</em> to <em>Aging in a Diagnostic Machine</em> — the home is reclassified as a sensing endpoint that must check in on schedule and generate defensible traces of well-being.</p>
+    <p data-i18n="p01.p2">The mandate arrives as <strong>Neural-Wave</strong>, an &ldquo;empathic&rdquo; AI+IoT care platform procured at scale. Cameras failed — the lens makes privacy loss visible, triggering resistance. Neural-Wave instead relies on <em>spectral surveillance</em>: a camera-free millimeter-wave radar that captures involuntary micro-motions through walls, outputting spectrograms and risk scores rather than footage.</p>
+    <p class="callout" data-i18n="p01.callout">Yet &ldquo;camera-free&rdquo; never means governance-free. The conflict shifts from &ldquo;I am being watched&rdquo; to &ldquo;I am being inferred&rdquo; — and opt-out becomes &ldquo;This feature is unavailable for your safety.&rdquo;</p>
   </section>
 
   <section id="manual" class="block">
-    <h2>02 · The Manual</h2>
-    <p>The primary contribution is a <strong>diegetic artifact</strong>: <em>The Neural-Wave Quick Escape Manual</em> — an &ldquo;authorized&rdquo; troubleshooting document that renders refusal actionable. Its clinical voice stages a satirical inversion: care has become infrastructural inference, and dignity is a maintenance task.</p>
-    <p>Three escalating pathways: <span class="tag">Comply</span> teach the body to output acceptable calm · <span class="tag">Degrade</span> crowd the system with a cleaner proxy than the self · <span class="tag">Refuse</span> build a dead zone where inference cannot reach.</p>
+    <h2 data-i18n="p02.title">02 · The Manual</h2>
+    <p data-i18n="p02.p1">The primary contribution is a <strong>diegetic artifact</strong>: <em>The Neural-Wave Quick Escape Manual</em> — an &ldquo;authorized&rdquo; troubleshooting document that renders refusal actionable. Its clinical voice stages a satirical inversion: care has become infrastructural inference, and dignity is a maintenance task.</p>
+    <p data-i18n="p02.p2">Three escalating pathways: <span class="tag">Comply</span> teach the body to output acceptable calm &middot; <span class="tag">Degrade</span> crowd the system with a cleaner proxy than the self &middot; <span class="tag">Refuse</span> build a dead zone where inference cannot reach.</p>
     <div class="manual-card">
-      <img src="assets/cover.png" alt="The Neural-Wave Quick Escape Manual 2036 cover spread" loading="lazy">
-      <a class="btn primary" href="https://github.com/phish-tech/Neural-Wave-2036/raw/main/manual/Neural-Wave_Quick_Escape_Manual_2036.pdf" target="_blank" rel="noopener">Download the Manual (PDF)</a>
+      <img src="assets/cover.png" alt="The Neural-Wave Quick Escape Manual 2036 cover spread" data-i18n-alt="p02.coverAlt" loading="lazy">
+      <a class="btn primary" href="https://github.com/phish-tech/Neural-Wave-2036/raw/main/manual/Neural-Wave_Quick_Escape_Manual_2036.pdf" target="_blank" rel="noopener" data-i18n="p02.download">Download the Manual (PDF)</a>
     </div>
   </section>
 
   <section id="threats" class="block">
-    <h2>03 · Threats &amp; Protocols</h2>
+    <h2 data-i18n="p03.title">03 · Threats &amp; Protocols</h2>
     <div class="cards">
 
       <article class="card">
-        <h3>T1 · Interpretation without appeal</h3>
-        <p>A risk score the resident cannot read, a threshold they cannot see, an action they cannot dispute. The system is unilaterally empowered to be &ldquo;right.&rdquo;</p>
-        <p class="protocol"><strong>Protocol:</strong> Refuse — remove yourself from the frame.</p>
+        <h3 data-i18n="t1.title">T1 · Interpretation without appeal</h3>
+        <p data-i18n="t1.p">A risk score the resident cannot read, a threshold they cannot see, an action they cannot dispute. The system is unilaterally empowered to be &ldquo;right.&rdquo;</p>
+        <p class="protocol" data-i18n="t1.protocol"><strong>Protocol:</strong> Refuse — remove yourself from the frame.</p>
       </article>
 
       <article class="card">
-        <h3>T2 · Coercive legibility</h3>
-        <p>&ldquo;Passive&rdquo; sensing actively disciplines bodies into standardized performance. Residents must work to remain legible — <em>Performative Wellness</em>.</p>
-        <p class="protocol"><strong>Protocol:</strong> Comply — knowingly, calm as labor, not as feeling.</p>
+        <h3 data-i18n="t2.title">T2 · Coercive legibility</h3>
+        <p data-i18n="t2.p">&ldquo;Passive&rdquo; sensing actively disciplines bodies into standardized performance. Residents must work to remain legible — <em>Performative Wellness</em>.</p>
+        <p class="protocol" data-i18n="t2.protocol"><strong>Protocol:</strong> Comply — knowingly, calm as labor, not as feeling.</p>
       </article>
 
       <article class="card">
-        <h3>T3 · Care as a locked door</h3>
-        <p>Actuators turn an inference into a constraint. A false positive is a lockdown, logged as &ldquo;Successful Intervention: Subject Stabilized.&rdquo;</p>
-        <p class="protocol"><strong>Protocol:</strong> Degrade — a phantom performs normality louder than reality.</p>
+        <h3 data-i18n="t3.title">T3 · Care as a locked door</h3>
+        <p data-i18n="t3.p">Actuators turn an inference into a constraint. A false positive is a lockdown, logged as &ldquo;Successful Intervention: Subject Stabilized.&rdquo;</p>
+        <p class="protocol" data-i18n="t3.protocol"><strong>Protocol:</strong> Degrade — a phantom performs normality louder than reality.</p>
       </article>
 
       <article class="card">
-        <h3>T4 · The opt-out that doesn&rsquo;t exist</h3>
-        <p>The escape valve is engineered shut &ldquo;for your safety.&rdquo; The only sanctioned relationship to the system is continued legibility.</p>
-        <p class="protocol"><strong>Protocol:</strong> All three — reopen the choice the system closed.</p>
+        <h3 data-i18n="t4.title">T4 · The opt-out that doesn&rsquo;t exist</h3>
+        <p data-i18n="t4.p">The escape valve is engineered shut &ldquo;for your safety.&rdquo; The only sanctioned relationship to the system is continued legibility.</p>
+        <p class="protocol" data-i18n="t4.protocol"><strong>Protocol:</strong> All three — reopen the choice the system closed.</p>
       </article>
 
       <article class="card">
-        <h3>T5 · The dignity deficit</h3>
-        <p>Joy, grief, slouching, cursing — every state becomes operational data. The body is never allowed to <em>not mean</em> something.</p>
-        <p class="protocol"><strong>Protocol:</strong> Refuse — a NULL state, a sub-place for un-performed living.</p>
+        <h3 data-i18n="t5.title">T5 · The dignity deficit</h3>
+        <p data-i18n="t5.p">Joy, grief, slouching, cursing — every state becomes operational data. The body is never allowed to <em>not mean</em> something.</p>
+        <p class="protocol" data-i18n="t5.protocol"><strong>Protocol:</strong> Refuse — a NULL state, a sub-place for un-performed living.</p>
       </article>
 
     </div>
   </section>
 
   <section id="lab" class="block">
-    <h2>04 · Live Lab — Try the Tactics</h2>
-    <p>Three interactive simulations of the Manual&rsquo;s pathways. Each demo is synthetic signal processing — the same visual language as the figures, now alive.</p>
+    <h2 data-i18n="p04.title">04 · Live Lab — Try the Tactics</h2>
+    <p data-i18n="p04.lede">Three interactive simulations of the Manual&rsquo;s pathways, paired with their figures. Scroll each exhibit for the field guide; press the controls to live inside the signal.</p>
 
-    <div class="demo" id="demo-comply">
-      <h3>Tactic 01 · Comply — the Statue Protocol</h3>
-      <div class="demo-stage">
-        <canvas class="demo-canvas" role="img" aria-label="ECG waveform of the Statue Protocol under Neural-Wave monitoring"></canvas>
-        <div class="ring-box">
-          <svg viewBox="0 0 100 100" class="ring-svg" aria-hidden="true">
-            <circle cx="50" cy="50" r="40" class="ring-bg"></circle>
-            <circle cx="50" cy="50" r="40" class="ring-progress" transform="rotate(-90 50 50)"></circle>
-          </svg>
-          <span class="ring-label">0%</span>
+    <article class="demo exhibit" id="demo-comply">
+      <h3 data-i18n="t01.title">Tactic 01 · Comply — the Statue Protocol</h3>
+      <div class="exhibit-stage">
+        <figure class="exhibit-media">
+          <img src="assets/figure3.png" alt="Tactic 01: Bio-Obedience — the Statue Protocol" data-i18n-alt="t01.imgAlt" loading="lazy">
+        </figure>
+        <div class="exhibit-demo">
+          <div class="demo-stage">
+            <canvas class="demo-canvas" role="img" aria-label="ECG waveform of the Statue Protocol under Neural-Wave monitoring" data-i18n-aria-label="t01.canvasAlt"></canvas>
+            <div class="ring-box">
+              <svg viewBox="0 0 100 100" class="ring-svg" aria-hidden="true">
+                <circle cx="50" cy="50" r="40" class="ring-bg"></circle>
+                <circle cx="50" cy="50" r="40" class="ring-progress" transform="rotate(-90 50 50)"></circle>
+              </svg>
+              <span class="ring-label">0%</span>
+            </div>
+          </div>
+          <p class="door-state">DOOR LOCKED</p>
+          <p class="demo-status" aria-live="polite"></p>
+          <div class="demo-controls">
+            <button class="btn primary" data-action="begin" data-i18n="t01.begin">Begin the Statue Protocol</button>
+            <button class="btn" data-action="reset" data-i18n="t01.reset">Reset</button>
+          </div>
         </div>
       </div>
-      <p class="door-state">DOOR LOCKED</p>
-      <p class="demo-status" aria-live="polite"></p>
-      <div class="demo-controls">
-        <button class="btn primary" data-action="begin">Begin the Statue Protocol</button>
-        <button class="btn" data-action="reset">Reset</button>
-      </div>
-    </div>
+      <ol class="exhibit-steps">
+        <li class="exhibit-step" data-i18n="t01.step1">Your home is a sensing endpoint. The radar reads micro-motion through the wall — no camera, no footage, only inference.</li>
+        <li class="exhibit-step" data-i18n="t01.step2">A risk spike is flagged. The door locks. The system calls it care.</li>
+        <li class="exhibit-step" data-i18n="t01.step3">Begin the Statue Protocol: hold still. Calm the amplitude. Match the model&rsquo;s prior.</li>
+        <li class="exhibit-step" data-i18n="t01.step4">Output acceptable calm and the permissions return — the body becomes the interface through which care is negotiated.</li>
+      </ol>
+    </article>
 
-    <div class="demo" id="demo-degrade">
-      <h3>Tactic 02 · Degrade — the Phantom</h3>
-      <div class="demo-stage">
-        <canvas class="demo-canvas" role="img" aria-label="Phantom oscillator signal masking the human waveform"></canvas>
-        <div class="lock-box">
-          <div class="lock-track"><div class="lock-bar"></div></div>
-          <span class="lock-label">phantom priority 0%</span>
+    <article class="demo exhibit" id="demo-degrade">
+      <h3 data-i18n="t02.title">Tactic 02 · Degrade — the Phantom</h3>
+      <div class="exhibit-stage">
+        <figure class="exhibit-media">
+          <img src="assets/figure4.png" alt="Tactic 02: The Phantom — the mimicry oscillator" data-i18n-alt="t02.imgAlt" loading="lazy">
+        </figure>
+        <div class="exhibit-demo">
+          <div class="demo-stage">
+            <canvas class="demo-canvas" role="img" aria-label="Phantom oscillator signal masking the human waveform" data-i18n-aria-label="t02.canvasAlt"></canvas>
+            <div class="lock-box">
+              <div class="lock-track"><div class="lock-bar"></div></div>
+              <span class="lock-label">phantom priority 0%</span>
+            </div>
+          </div>
+          <p class="demo-status" aria-live="polite"></p>
+          <div class="demo-controls">
+            <button class="btn" data-action="toggle" aria-pressed="false">Phantom Oscillator: OFF</button>
+          </div>
         </div>
       </div>
-      <p class="demo-status" aria-live="polite"></p>
-      <div class="demo-controls">
-        <button class="btn" data-action="toggle" aria-pressed="false">Phantom Oscillator: OFF</button>
-      </div>
-    </div>
+      <ol class="exhibit-steps">
+        <li class="exhibit-step" data-i18n="t02.step1">Compliance still means the sensor watches you — just more quietly.</li>
+        <li class="exhibit-step" data-i18n="t02.step2">Mount the mimicry oscillator. It emits a &ldquo;Hyper-Normal&rdquo; sinus rhythm the model reads as perfect health.</li>
+        <li class="exhibit-step" data-i18n="t02.step3">As phantom priority rises, the sensor tracks the machine instead of the body.</li>
+        <li class="exhibit-step" data-i18n="t02.step4">You become statistically invisible — the chaotic human body vanishes behind a cleaner proxy.</li>
+      </ol>
+    </article>
 
-    <div class="demo" id="demo-refuse">
-      <h3>Tactic 03 · Refuse — the Null Space</h3>
-      <div class="demo-stage">
-        <canvas class="demo-canvas" role="img" aria-label="Null space: shielded waveform vanishing from the sensor"></canvas>
+    <article class="demo exhibit" id="demo-refuse">
+      <h3 data-i18n="t03.title">Tactic 03 · Refuse — the Null Space</h3>
+      <div class="exhibit-stage">
+        <figure class="exhibit-media">
+          <img src="assets/figure5.png" alt="Tactic 03: The Null Space — the Faraday corner" data-i18n-alt="t03.imgAlt" loading="lazy">
+        </figure>
+        <div class="exhibit-demo">
+          <div class="demo-stage">
+            <canvas class="demo-canvas" role="img" aria-label="Null space: shielded waveform vanishing from the sensor" data-i18n-aria-label="t03.canvasAlt"></canvas>
+          </div>
+          <p class="demo-status" aria-live="polite"></p>
+          <div class="demo-controls">
+            <button class="btn" data-action="toggle" aria-pressed="false">Faraday Shield: OFF</button>
+          </div>
+        </div>
       </div>
-      <p class="demo-status" aria-live="polite"></p>
-      <div class="demo-controls">
-        <button class="btn" data-action="toggle" aria-pressed="false">Faraday Shield: OFF</button>
-      </div>
-    </div>
+      <ol class="exhibit-steps">
+        <li class="exhibit-step" data-i18n="t03.step1">The opt-out is engineered shut &ldquo;for your safety.&rdquo;</li>
+        <li class="exhibit-step" data-i18n="t03.step2">Build the Faraday corner — aluminum shielding that swallows the millimeter-wave field.</li>
+        <li class="exhibit-step" data-i18n="t03.step3">Inside the dead zone there is no signal to infer from.</li>
+        <li class="exhibit-step" data-i18n="t03.step4">The body is finally allowed to not mean anything. Refusal is not a setting — it&rsquo;s a physics.</li>
+      </ol>
+    </article>
 
   </section>
 
   <section id="story" class="block story-section">
-    <h2>05 · Arthur&rsquo;s Night — scroll to play</h2>
-    <p>An 81-year-old retired structural engineer watches a live match. The system calls it an emergency. Scroll to move through the night — the waveform follows you.</p>
+    <h2 data-i18n="p05.title">05 · Arthur&rsquo;s Night — scroll to play</h2>
+    <p data-i18n="p05.lede">An 81-year-old retired structural engineer watches a live match. The system calls it an emergency. Scroll to move through the night — the waveform follows you.</p>
     <div class="story-sticky">
-      <canvas class="story-canvas" role="img" aria-label="Arthur's heart-rate waveform across the night, tied to the scroll position"></canvas>
+      <canvas class="story-canvas" role="img" aria-label="Arthur's heart-rate waveform across the night, tied to the scroll position" data-i18n-aria-label="p05.canvasAlt"></canvas>
       <div class="story-hud" aria-live="polite">
         <span class="story-hr">62 BPM</span>
+        <span class="story-conf">CONF 0.91</span>
         <span class="story-door">ARMED</span>
       </div>
+      <p class="story-interp">INTERPRETATION: SIGNAL NOMINAL</p>
       <p class="story-caption" aria-live="polite">20:40 · the match</p>
       <p class="story-sub" aria-live="polite">watching the final minutes of the game</p>
     </div>
     <div class="story-spacer"></div>
+    <div class="story-payoff">
+      <p class="payoff-line1" data-i18n="payoff.line1">Arthur was not having a stroke. His team scored.</p>
+      <p class="payoff-line2" data-i18n="payoff.line2">The system was accurate about the body. It was wrong about the life.</p>
+    </div>
   </section>
 
   <section id="world" class="block">
-    <h2>06 · Worldbuilding</h2>
+    <h2 data-i18n="p06.title">06 · Worldbuilding</h2>
     <div class="gallery">
-      <figure><img src="assets/figure2.png" alt="The Ontological Gap" loading="lazy"><figcaption>The Ontological Gap — joy misdiagnosed as &ldquo;Pre-Stroke Agitation.&rdquo;</figcaption></figure>
-      <figure><img src="assets/figure3.png" alt="Tactic 01: Bio-Obedience" loading="lazy"><figcaption>Tactic 01 · Bio-Obedience — the Statue Protocol.</figcaption></figure>
-      <figure><img src="assets/figure4.png" alt="Tactic 02: The Phantom" loading="lazy"><figcaption>Tactic 02 · The Phantom — the mimicry oscillator.</figcaption></figure>
-      <figure><img src="assets/figure5.png" alt="Tactic 03: The Null Space" loading="lazy"><figcaption>Tactic 03 · The Null Space — the Faraday corner.</figcaption></figure>
+      <figure><img src="assets/figure2.png" alt="The Ontological Gap" data-i18n-alt="w1.alt" loading="lazy"><figcaption data-i18n="w1.cap">The Ontological Gap — joy misdiagnosed as &ldquo;Pre-Stroke Agitation.&rdquo;</figcaption></figure>
+      <figure><img src="assets/figure3.png" alt="Tactic 01: Bio-Obedience" data-i18n-alt="w2.alt" loading="lazy"><figcaption data-i18n="w2.cap">Tactic 01 · Bio-Obedience — the Statue Protocol.</figcaption></figure>
+      <figure><img src="assets/figure4.png" alt="Tactic 02: The Phantom" data-i18n-alt="w3.alt" loading="lazy"><figcaption data-i18n="w3.cap">Tactic 02 · The Phantom — the mimicry oscillator.</figcaption></figure>
+      <figure><img src="assets/figure5.png" alt="Tactic 03: The Null Space" data-i18n-alt="w4.alt" loading="lazy"><figcaption data-i18n="w4.cap">Tactic 03 · The Null Space — the Faraday corner.</figcaption></figure>
     </div>
     <ul class="links">
-      <li><a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/archive/timeline_2036.md" target="_blank" rel="noopener">2036 timeline</a></li>
-      <li><a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/archive/glossary.md" target="_blank" rel="noopener">Glossary</a></li>
-      <li><a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/archive/empathic_aiot.md" target="_blank" rel="noopener">Empathic AIoT setting</a></li>
-      <li><a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/archive/threat_model.md" target="_blank" rel="noopener">Threat model</a></li>
-      <li><a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/archive/scenario_cards.md" target="_blank" rel="noopener">Scenario cards</a></li>
-      <li><a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/archive/design_rationale.md" target="_blank" rel="noopener">Design rationale</a></li>
+      <li><a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/archive/timeline_2036.md" target="_blank" rel="noopener" data-i18n="links.timeline">2036 timeline</a></li>
+      <li><a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/archive/glossary.md" target="_blank" rel="noopener" data-i18n="links.glossary">Glossary</a></li>
+      <li><a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/archive/empathic_aiot.md" target="_blank" rel="noopener" data-i18n="links.setting">Empathic AIoT setting</a></li>
+      <li><a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/archive/threat_model.md" target="_blank" rel="noopener" data-i18n="links.threats">Threat model</a></li>
+      <li><a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/archive/scenario_cards.md" target="_blank" rel="noopener" data-i18n="links.scenarios">Scenario cards</a></li>
+      <li><a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/archive/design_rationale.md" target="_blank" rel="noopener" data-i18n="links.rationale">Design rationale</a></li>
     </ul>
   </section>
 
   <section id="research" class="block">
-    <h2>07 · Research Context</h2>
-    <p>This is an accepted design-fiction paper for <strong>ACM Interactions</strong> (2026). The Escape Manual is a <em>research-through-design</em> argument: when governance becomes infrastructural, resistance must become technical.</p>
-    <p>Three implications for HCI: the <strong>Accuracy Trap</strong> (autonomy loss is often a product of accuracy, not a failure of it), <strong>Coercive Legibility</strong> (passive sensors discipline bodies), and <strong>Adversarial Literacy</strong> as a necessary digital right — privacy in the future may not lie in policy, but in physics.</p>
-    <p><a class="btn" href="https://github.com/phish-tech/Neural-Wave-2036/raw/main/paper/neural_wave_quick_escape_manual_2036_preprint.pdf" target="_blank" rel="noopener">Read the paper (PDF)</a></p>
+    <h2 data-i18n="p07.title">07 · Research Context</h2>
+    <p class="lede" data-i18n="p07.lede">This is an accepted design-fiction paper for <strong>ACM Interactions</strong> (2026) — a research-through-design argument: when governance becomes infrastructural, resistance may also require technical literacy.</p>
+
+    <div class="research-table">
+      <div class="rt-head">
+        <span data-i18n="p07.col.q">Research Question</span>
+        <span data-i18n="p07.col.a">Design Artifact</span>
+        <span data-i18n="p07.col.arg">HCI Argument</span>
+      </div>
+      <div class="rt-row">
+        <span data-i18n="r1.q" data-i18n-label="p07.col.q">What happens when ambient sensing becomes infrastructural and opt-out disappears?</span>
+        <span data-i18n="r1.a" data-i18n-label="p07.col.a">The Quick Escape Manual 2036</span>
+        <span data-i18n="r1.arg" data-i18n-label="p07.col.arg">Accuracy can threaten autonomy even when inference works correctly.</span>
+      </div>
+      <div class="rt-row">
+        <span data-i18n="r2.q" data-i18n-label="p07.col.q">How does passive sensing reshape behavior?</span>
+        <span data-i18n="r2.a" data-i18n-label="p07.col.a">Comply / Degrade / Refuse</span>
+        <span data-i18n="r2.arg" data-i18n-label="p07.col.arg">Passive sensing can produce Coercive Legibility.</span>
+      </div>
+      <div class="rt-row">
+        <span data-i18n="r3.q" data-i18n-label="p07.col.q">What new literacy is required?</span>
+        <span data-i18n="r3.a" data-i18n-label="p07.col.a">Adversarial living</span>
+        <span data-i18n="r3.arg" data-i18n-label="p07.col.arg">Future privacy may require technical as well as institutional agency.</span>
+      </div>
+    </div>
+
+    <p class="callout research-physics" data-i18n="p07.physics">Privacy in the future may not lie in policy, but in physics.</p>
+
+    <div class="research-meta">
+      <p class="research-accepted" data-i18n="p07.accepted">Accepted Feature — ACM Interactions, Nov/Dec 2026</p>
+      <p class="research-authors" data-i18n="p07.authors">Boyuan Gu · Shuaiqi Cheng · Minghao Yu</p>
+      <div class="research-links">
+        <a class="btn primary" href="https://github.com/phish-tech/Neural-Wave-2036/raw/main/paper/neural_wave_quick_escape_manual_2036_preprint.pdf" target="_blank" rel="noopener" data-i18n="p07.preprint">Preprint</a>
+        <a class="btn" href="https://github.com/phish-tech/Neural-Wave-2036/raw/main/manual/Neural-Wave_Quick_Escape_Manual_2036.pdf" target="_blank" rel="noopener" data-i18n="p07.manual">Manual</a>
+        <a class="btn" href="https://github.com/phish-tech/Neural-Wave-2036" target="_blank" rel="noopener" data-i18n="p07.github">GitHub</a>
+      </div>
+    </div>
   </section>
 
   <section id="cite" class="block">
-    <h2>08 · Citation &amp; Archive</h2>
+    <h2 data-i18n="p08.title">08 · Citation &amp; Archive</h2>
     <pre><code>@misc{gu2026neuralwave,
   title  = {The Neural-Wave Quick Escape Manual 2036: A Field Guide
            to Adversarial Living in the Era of "Empathic" AIoT},
@@ -190,20 +276,24 @@
   year   = {2026},
   note   = {Design fiction, accepted for publication in ACM Interactions},
 }</code></pre>
-    <p>Repository citation: <code>CITATION.cff</code> · Version: <code>v1.0.0</code> · Release notes: <a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/release/v1.0_notes.md" target="_blank" rel="noopener">v1.0 notes</a>.</p>
-    <p class="doi">DOI: <em>pending Zenodo archive of the v1.0.0 GitHub release</em></p>
+    <p data-i18n="p08.repo">Repository citation:</p>
+    <p><code>CITATION.cff</code> <span data-i18n="p08.version">Version:</span> <code>v1.0.0</code> · <a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/release/v1.0_notes.md" target="_blank" rel="noopener" data-i18n="p08.notes">v1.0 notes</a></p>
+    <p class="doi" data-i18n="p08.paperdoi">Paper DOI — ACM Interactions article, to be assigned at publication</p>
+    <p class="doi" data-i18n="p08.archivedoi">Archive DOI — Zenodo snapshot of this repository, pending</p>
+    <p class="doi-note" data-i18n="p08.distinct">These are two distinct identifiers: the paper DOI identifies the article; the archive DOI identifies the repository snapshot.</p>
   </section>
 
 </main>
 
 <footer id="credits" class="block">
-  <h2>09 · Credits &amp; Licenses</h2>
-  <p><strong>Authors:</strong> Boyuan Gu (correspondence · guboyuan79@gmail.com), Shuaiqi Cheng, Minghao Yu — University of Electronic Science and Technology of China (UESTC).</p>
-  <p><strong>Licenses:</strong> Code and web assets <a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/LICENSE-CODE" target="_blank" rel="noopener">MIT</a> · Original text, manual, figures, and visual assets <a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/LICENSE-CONTENT" target="_blank" rel="noopener">CC BY 4.0</a> · Third-party assets per <a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/visuals/ASSET_LICENSES.md" target="_blank" rel="noopener">ASSET_LICENSES.md</a>.</p>
-  <p class="disclaimer">This is a design-fiction / research artifact — not a product manual, safety document, or technical guide. It contains no device specifications, frequencies, or reproducible interference methods.</p>
-  <p class="foot">ARCHIVE STATUS: OPEN · EST. 2036 · <span class="blink">▌</span></p>
+  <h2 data-i18n="foot.title">09 · Credits &amp; Licenses</h2>
+  <p><span data-i18n="foot.authors">Authors:</span> Boyuan Gu (correspondence · guboyuan79@gmail.com), Shuaiqi Cheng, Minghao Yu — University of Electronic Science and Technology of China (UESTC).</p>
+  <p><span data-i18n="foot.license">Licenses:</span> Code and web assets <a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/LICENSE-CODE" target="_blank" rel="noopener">MIT</a> · Original text, manual, figures, and visual assets <a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/LICENSE-CONTENT" target="_blank" rel="noopener">CC BY 4.0</a> · Third-party assets per <a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/visuals/ASSET_LICENSES.md" target="_blank" rel="noopener">ASSET_LICENSES.md</a>.</p>
+  <p class="disclaimer" data-i18n="foot.disclaimer">This is a design-fiction / research artifact — not a product manual, safety document, or technical guide. It contains no device specifications, frequencies, or reproducible interference methods.</p>
+  <p class="foot"><span data-i18n="foot.archive">ARCHIVE STATUS: OPEN · EST. 2036</span> · <span class="blink">▌</span></p>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script type="module" src="js/tactics.js"></script>
 <script type="module" src="js/timeline.js"></script>
 <script type="module" src="js/radar.js"></script>
