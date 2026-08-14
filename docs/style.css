@@ -37,10 +37,14 @@ body {
   padding: 72px 24px 56px;
   text-align: center;
   border-bottom: 1px solid var(--line);
-  background:
-    radial-gradient(ellipse at 50% -20%, rgba(92, 255, 176, 0.10), transparent 60%),
-    var(--bg);
+  background: radial-gradient(ellipse at 50% -20%, rgba(92, 255, 176, 0.10), transparent 60%);
+  position: relative;
+  z-index: 1;
 }
+
+#radar-bg { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+
+main, footer.block { position: relative; z-index: 1; }
 
 .eyebrow {
   color: var(--accent);
@@ -198,8 +202,91 @@ footer p { color: var(--dim); font-size: 13px; }
 .blink { animation: blink 1.2s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 
+/* ---- Reveal transitions ---- */
+main .block, footer.block {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+main .block.revealed, footer.block.revealed { opacity: 1; transform: none; }
+
+/* ---- Live Lab / demo cards ---- */
+.demo {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 16px 18px;
+  margin: 18px 0;
+}
+.demo h3 { margin: 0 0 14px; font-size: 14px; color: var(--accent); letter-spacing: 0.04em; }
+.demo-stage { display: flex; align-items: stretch; gap: 14px; }
+.demo-canvas {
+  flex: 1;
+  width: 100%;
+  height: 200px;
+  display: block;
+  border: 1px solid var(--line);
+  background: #070a0d;
+}
+
+.ring-box {
+  position: relative;
+  width: 116px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ring-svg { width: 112px; height: 112px; }
+.ring-bg { fill: none; stroke: var(--line); stroke-width: 6; }
+.ring-progress { fill: none; stroke: var(--accent); stroke-width: 6; stroke-linecap: round; }
+.ring-label { position: absolute; font-size: 13px; color: var(--accent); letter-spacing: 0.04em; }
+
+.lock-box { width: 220px; flex: none; display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+.lock-track { height: 10px; background: var(--line); overflow: hidden; }
+.lock-bar { height: 100%; width: 0%; background: var(--accent); }
+.lock-label { font-size: 11px; color: var(--dim); letter-spacing: 0.08em; }
+
+.demo-status { margin: 12px 0 0; min-height: 1.4em; font-size: 12.5px; color: var(--dim); }
+.demo-status.warn { color: var(--amber); }
+.demo-status.ok { color: var(--accent); }
+
+.door-state { margin: 10px 0 0; font-size: 12px; letter-spacing: 0.14em; }
+.door-state.on { color: var(--amber); }
+.door-state.off { color: var(--accent); }
+
+.demo-controls { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.demo-controls .btn:disabled { opacity: 0.4; cursor: not-allowed; border-color: var(--line); color: var(--dim); }
+
+/* ---- Arthur's Night (scroll story) ---- */
+.story-section { padding-bottom: 0; }
+.story-sticky { position: sticky; top: 6vh; }
+.story-canvas {
+  width: 100%;
+  height: 44vh;
+  display: block;
+  border: 1px solid var(--line);
+  background: #070a0d;
+}
+.story-hud { display: flex; justify-content: space-between; align-items: baseline; margin-top: 12px; }
+.story-hr { font-size: 26px; letter-spacing: 0.1em; color: var(--accent); font-weight: 700; }
+.story-door { font-size: 12px; letter-spacing: 0.14em; }
+.story-door.on { color: var(--amber); }
+.story-door.off { color: var(--accent); }
+.story-caption { margin: 16px 0 2px; font-size: 19px; color: #eef2f0; font-family: var(--serif); }
+.story-sub { margin: 0; color: var(--dim); font-size: 13px; }
+.story-spacer { height: 200vh; }
+
 /* ---- Responsive ---- */
 @media (max-width: 560px) {
   .hero { padding: 48px 16px 40px; }
   main { padding: 0 16px; }
+  .demo-stage { flex-direction: column; }
+  .ring-box { width: 100%; }
+  .lock-box { width: 100%; }
+  .story-canvas { height: 34vh; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main .block, footer.block { opacity: 1; transform: none; transition: none; }
+  .blink { animation: none; }
 }

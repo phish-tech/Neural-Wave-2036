@@ -18,6 +18,8 @@
     <a class="btn primary" href="#manual">Read the Manual</a>
     <a class="btn" href="#premise">The Premise</a>
     <a class="btn" href="#threats">Threats &amp; Protocols</a>
+    <a class="btn" href="#lab">Live Lab</a>
+    <a class="btn" href="#story">Arthur&rsquo;s Night</a>
     <a class="btn" href="#world">Worldbuilding</a>
     <a class="btn" href="#research">Research</a>
     <a class="btn" href="#cite">Cite</a>
@@ -81,8 +83,75 @@
     </div>
   </section>
 
+  <section id="lab" class="block">
+    <h2>04 · Live Lab — Try the Tactics</h2>
+    <p>Three interactive simulations of the Manual&rsquo;s pathways. Each demo is synthetic signal processing — the same visual language as the figures, now alive.</p>
+
+    <div class="demo" id="demo-comply">
+      <h3>Tactic 01 · Comply — the Statue Protocol</h3>
+      <div class="demo-stage">
+        <canvas class="demo-canvas"></canvas>
+        <div class="ring-box">
+          <svg viewBox="0 0 100 100" class="ring-svg" aria-hidden="true">
+            <circle cx="50" cy="50" r="40" class="ring-bg"></circle>
+            <circle cx="50" cy="50" r="40" class="ring-progress" transform="rotate(-90 50 50)"></circle>
+          </svg>
+          <span class="ring-label">0%</span>
+        </div>
+      </div>
+      <p class="door-state">DOOR LOCKED</p>
+      <p class="demo-status"></p>
+      <div class="demo-controls">
+        <button class="btn primary" data-action="begin">Begin the Statue Protocol</button>
+        <button class="btn" data-action="reset">Reset</button>
+      </div>
+    </div>
+
+    <div class="demo" id="demo-degrade">
+      <h3>Tactic 02 · Degrade — the Phantom</h3>
+      <div class="demo-stage">
+        <canvas class="demo-canvas"></canvas>
+        <div class="lock-box">
+          <div class="lock-track"><div class="lock-bar"></div></div>
+          <span class="lock-label">phantom priority 0%</span>
+        </div>
+      </div>
+      <p class="demo-status"></p>
+      <div class="demo-controls">
+        <button class="btn" data-action="toggle">Phantom Oscillator: OFF</button>
+      </div>
+    </div>
+
+    <div class="demo" id="demo-refuse">
+      <h3>Tactic 03 · Refuse — the Null Space</h3>
+      <div class="demo-stage">
+        <canvas class="demo-canvas"></canvas>
+      </div>
+      <p class="demo-status"></p>
+      <div class="demo-controls">
+        <button class="btn" data-action="toggle">Faraday Shield: OFF</button>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="story" class="block story-section">
+    <h2>05 · Arthur&rsquo;s Night — scroll to play</h2>
+    <p>An 81-year-old retired structural engineer watches a live match. The system calls it an emergency. Scroll to move through the night — the waveform follows you.</p>
+    <div class="story-sticky">
+      <canvas class="story-canvas"></canvas>
+      <div class="story-hud">
+        <span class="story-hr">62 BPM</span>
+        <span class="story-door">ARMED</span>
+      </div>
+      <p class="story-caption">20:40 · the match</p>
+      <p class="story-sub">watching the final minutes of the game</p>
+    </div>
+    <div class="story-spacer"></div>
+  </section>
+
   <section id="world" class="block">
-    <h2>04 · Worldbuilding</h2>
+    <h2>06 · Worldbuilding</h2>
     <div class="gallery">
       <figure><img src="assets/figure2.png" alt="The Ontological Gap"><figcaption>The Ontological Gap — joy misdiagnosed as &ldquo;Pre-Stroke Agitation.&rdquo;</figcaption></figure>
       <figure><img src="assets/figure3.png" alt="Tactic 01: Bio-Obedience"><figcaption>Tactic 01 · Bio-Obedience — the Statue Protocol.</figcaption></figure>
@@ -100,14 +169,14 @@
   </section>
 
   <section id="research" class="block">
-    <h2>05 · Research Context</h2>
+    <h2>07 · Research Context</h2>
     <p>This is an accepted design-fiction paper for <strong>ACM Interactions</strong> (2026). The Escape Manual is a <em>research-through-design</em> argument: when governance becomes infrastructural, resistance must become technical.</p>
     <p>Three implications for HCI: the <strong>Accuracy Trap</strong> (autonomy loss is often a product of accuracy, not a failure of it), <strong>Coercive Legibility</strong> (passive sensors discipline bodies), and <strong>Adversarial Literacy</strong> as a necessary digital right — privacy in the future may not lie in policy, but in physics.</p>
     <p><a class="btn" href="https://github.com/phish-tech/Neural-Wave-2036/raw/main/paper/neural_wave_quick_escape_manual_2036_preprint.pdf" target="_blank" rel="noopener">Read the paper (PDF)</a></p>
   </section>
 
   <section id="cite" class="block">
-    <h2>06 · Citation &amp; Archive</h2>
+    <h2>08 · Citation &amp; Archive</h2>
     <pre><code>@misc{gu2026neuralwave,
   title  = {The Neural-Wave Quick Escape Manual 2036: A Field Guide
            to Adversarial Living in the Era of "Empathic" AIoT},
@@ -122,12 +191,16 @@
 </main>
 
 <footer id="credits" class="block">
-  <h2>07 · Credits &amp; Licenses</h2>
+  <h2>09 · Credits &amp; Licenses</h2>
   <p><strong>Authors:</strong> Boyuan Gu (correspondence · guboyuan79@gmail.com), Shuaiqi Cheng, Minghao Yu — University of Electronic Science and Technology of China (UESTC).</p>
   <p><strong>Licenses:</strong> Code and web assets <a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/LICENSE-CODE" target="_blank" rel="noopener">MIT</a> · Original text, manual, figures, and visual assets <a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/LICENSE-CONTENT" target="_blank" rel="noopener">CC BY 4.0</a> · Third-party assets per <a href="https://github.com/phish-tech/Neural-Wave-2036/blob/main/visuals/ASSET_LICENSES.md" target="_blank" rel="noopener">ASSET_LICENSES.md</a>.</p>
   <p class="disclaimer">This is a design-fiction / research artifact — not a product manual, safety document, or technical guide. It contains no device specifications, frequencies, or reproducible interference methods.</p>
   <p class="foot">ARCHIVE STATUS: OPEN · EST. 2036 · <span class="blink">▌</span></p>
 </footer>
+
+<script type="module" src="js/tactics.js"></script>
+<script type="module" src="js/timeline.js"></script>
+<script type="module" src="js/radar.js"></script>
 
 </body>
 </html>
